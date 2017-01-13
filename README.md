@@ -40,7 +40,13 @@ _Для тех, кто принципиально хочет использов�
 
 ## Документация
 
-У Qt великолепная документация. Ознакомится с ней вы можете [здесь](http://doc.qt.io/qt-5/index.html).
+У Qt великолепная документация. Ознакомится с ней вы можете [здесь](http://doc.qt.io/qt-5/index.html). Библиотека разделена на модули. Наиболее интересные для нас сейчас:
+* __Qt Core__ - Базовая функциональность, контейнеры, метаобъектная система.
+* __Qt GUI__ - Базовые классы для пользовательского интерфейса. Включает в себя классы для работы с OpenGL.
+* __Qt Multimedia__ - Классы для поддержки аудио, видео и прочего мультимедиа.
+* __Qt Multimedia Widgets__ - Классы, основанные на виджетах, для поддержки мультимедиа.
+* __Qt Network__ - Классы для работы с сетью.
+* __Qt Widgets__ - Классы виджетов на C++.
 
 #### Qt Core
 [Qt Core](http://doc.qt.io/qt-5/qtcore-index.html)  
@@ -52,7 +58,7 @@ _Для тех, кто принципиально хочет использов�
 [Qt GUI](http://doc.qt.io/qt-5/qtgui-index.html)  
 > The Qt GUI module provides classes for windowing system integration, event handling, OpenGL and OpenGL ES integration, 2D graphics, basic imaging, fonts and text. These classes are used internally by Qt's user interface technologies and can also be used directly, for instance to write applications using low-level OpenGL ES graphics APIs.
 
-#### Виджеты
+#### Qt Widgets
 [Пользовательский интерфейс](http://doc.qt.io/qt-5/topics-ui.html)  
 > Qt features multiple technologies for creating user interfaces. While it is possible to mix and match these different technologies as needed, one approach is often better suitable for a certain type of user interface than the others. Qt Creator is a good example of an application that mixes different user interface technologies. In fact, it uses the two different approaches described below. Qt Creator uses the traditional Qt Widgets such as menus and dialogs as a basis of the user interface, Qt Quick amongst others for the welcome screen. The following sections provide brief introductions to the available technologies for creating user interfaces, and a comparison table to help choosing the best suitable technology.
 
