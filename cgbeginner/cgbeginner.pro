@@ -18,7 +18,7 @@ SOURCES += main.cpp \
 HEADERS  += \
     openglwidget.h
 
-FORMS    += widget.ui
+FORMS    +=
 
 RESOURCES += \
     res.qrc

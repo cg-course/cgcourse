@@ -16,16 +16,6 @@ void OpenGLWidget::initializeGL()
 {
     initializeOpenGLFunctions();
     glClearColor(0.0, 0.0, 0.0, 1.0);
-//    glEnable(GL_DEPTH_TEST);
-//    glDepthFunc(GL_LESS);
-
-    //glEnable(GL_CULL_FACE);
-//    glFrontFace(GL_CW);
-    //glCullFace(GL_BACK);
-
-//    glEnable(GL_BLEND);
-//    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-//    glBlendEquation(GL_FUNC_ADD);
 
     buildBasicShader();
 
@@ -69,24 +59,13 @@ void OpenGLWidget::paintGL()
             GL_DEPTH_BUFFER_BIT |
             GL_STENCIL_BUFFER_BIT);
 
-    static int i = 0;
-    qDebug() << "paintGL" << i++;
-
     if(!m_initialized)
         return;
 
     m_basicShaderProgram->bind();
 
-//    m_basicShaderProgram->setUniformValue("MVP", mat_mvp);
-//    m_basicShaderProgram->setUniformValue("MV", mat_view*mat_model);
-//    m_basicShaderProgram->setUniformValue("NormalMatrix", (mat_view*mat_model).inverted().transposed());
-
-//    m_vao.bind();
-    //glDrawArrays(GL_TRIANGLES, 0, m_gridSize*m_gridSize);
-
     glDrawArrays(GL_TRIANGLES, 0, 3);
 
-//    m_vao.release();
     m_basicShaderProgram->release();
 }
 

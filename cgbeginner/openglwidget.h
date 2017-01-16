@@ -12,13 +12,7 @@
 #include <QVector4D>
 #include <QVector>
 
-#include <QElapsedTimer>
 #include <QTimer>
-
-#include <QPropertyAnimation>
-#include <QImage>
-#include <QPainter>
-#include <QFont>
 
 class OpenGLWidget : public QOpenGLWidget, protected QOpenGLFunctions
 {
