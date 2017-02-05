@@ -132,7 +132,7 @@ vao.bind();
 // задаем расположение атрибутов
 buff.bind();
 shader->bind();
-shader->enableAttributeArray("pos"); // "подключим" сохранение атрибутов для переменной pos в шейдере
+shader->enableAttributeArray("pos"); // "подключим" сохранение атрибутов для переменной pos (которая в шейдере)
 shader->setAttributeBuffer("pos", GL_FLOAT, 0, 2);
 buff.release();
 shader->release();
