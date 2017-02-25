@@ -52,6 +52,9 @@ public slots:
 
     void setZoom(qreal arg)
     {
+        if (arg < 0.1)
+            return;
+
         if (m_zoom == arg)
             return;
 
